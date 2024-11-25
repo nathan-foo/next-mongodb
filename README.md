@@ -34,12 +34,12 @@ const Topic = mongoose.models.Topic || mongoose.model("Topic", schema);
 
 export default Topic;
 ```
-6. In the root directory, create a libs folder and a file named `mongodb.js`.
+6. In the root directory, create a lib folder and a file named `mongodb.js`.
 ```js
 /* mongodb.js */
 import mongoose from "mongoose";
 
-const mongoConnect = async () => {
+const connectDB = async () => {
     try {
         await mongoose.connect(process.env.MONGODB_URI);
         console.log("Connected to MongoDB.")
@@ -48,7 +48,7 @@ const mongoConnect = async () => {
     }
 };
 
-export default mongoConnect;
+export default connectDB;
 ```
 7. In the app folder, create a new route `api/routes/[id]`.
 8. Create a route.js file in `api/routes` and `api/routes/[id]`.
