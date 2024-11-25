@@ -51,6 +51,6 @@ const connectDB = async () => {
 export default connectDB;
 ```
 7. In the app folder, create a new route `api/routes/[id]`.
-8. Create a route.js file in `api/routes` and `api/routes/[id]`.
+8. Create a `route.js` file in `api/routes` and `api/routes/[id]`.
 9. Handle `GET`, `POST`, and `DELETE` requests in `api/routes`.
 10. Handle dynamic `GET` and `UPDATE` requests in `api/routes/[id]`.
